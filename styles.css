@@ -1,0 +1,81 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    margin: 20px;
+    background-color: white;
+}
+.slant {
+    background-color: pink;
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    overflow: hidden;
+    top: -40%;
+    right: -40%;
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+.stick {
+    position: sticky;
+    top: 0;
+    background-color: orangered;
+    margin: 0;
+    padding:20px;
+    z-index: 2;
+}
+
+.stick p {
+    margin-top: 0;
+}
+
+.content {
+    display: flex;
+}
+
+.left {
+    background-color: hotpink;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+.left p {
+    margin-top: 30px;
+}
+
+.ski-logo {
+    width: 100px;
+    position: relative;
+    top: 20px;
+    align-self: center;
+
+}
+
+
+.right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+.tile {
+    border: 1px solid black;
+    height: 300px;
+    width: 250px;
+    margin: 10px;
+}
+
+footer {
+    background-color: lightblue;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
